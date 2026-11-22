@@ -1,3 +1,4 @@
+# Build the Prism Android APK, including its custom launcher icon.
 name: Build APK
 on:
   push:
