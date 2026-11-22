@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_margin="10dp" android:padding="8dp" android:gravity="center_vertical"
+        android:background="@drawable/glass" android:orientation="horizontal">
+        <EditText android:id="@+id/addr" android:layout_width="0dp" android:layout_height="40dp"
+            android:layout_weight="1" android:background="@drawable/pill" android:paddingHorizontal="16dp"
+            android:hint="Search or enter an address" android:textColorHint="#99EAF2FF"
+            android:textColor="#EAF2FF" android:textSize="14sp" android:singleLine="true"
+            android:inputType="textUri" android:imeOptions="actionGo" />
+        <Button android:id="@+id/vpn" style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content" android:layout_height="40dp"
+            android:text="VPN off" android:textAllCaps="false" android:textColor="#EAF2FF" />
+    </LinearLayout>
+
+    <FrameLayout android:id="@+id/host" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_margin="10dp" android:padding="4dp"
+        android:background="@drawable/glass" android:orientation="horizontal">
+        <Button android:id="@+id/back" style="?android:attr/borderlessButtonStyle" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1" android:text="‹" android:textSize="22sp" android:textColor="#EAF2FF" />
+        <Button android:id="@+id/fwd" style="?android:attr/borderlessButtonStyle" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1" android:text="›" android:textSize="22sp" android:textColor="#EAF2FF" />
+        <Button android:id="@+id/reload" style="?android:attr/borderlessButtonStyle" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1" android:text="⟳" android:textSize="20sp" android:textColor="#EAF2FF" />
+        <Button android:id="@+id/tabs" style="?android:attr/borderlessButtonStyle" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1" android:text="1" android:textColor="#EAF2FF" />
+        <Button android:id="@+id/newtab" style="?android:attr/borderlessButtonStyle" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1" android:text="+" android:textSize="22sp" android:textColor="#EAF2FF" />
+    </LinearLayout>
+</LinearLayout>
